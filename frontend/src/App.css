@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+body {
+  background: #284b63;
+  color: white;
+  font-family: 'Hind Siliguri', sans-serif;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: .5s;
+}
+
+a:hover {
+  color: #dddddd;
+}
+
+.navbar {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.navbar .logo{
+  font-weight: bold;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.navbar .opciones {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .opciones span{
+  cursor: pointer;
+}
+
+.navbar .register-btn {
+  background: #3c6e71;
+  color: white;
+}
+
+.navbar .login-btn {
+  background: #d9d9d9;
+}
+
+/* Estilos para la página de perfil */
+.profile-container {
+  background: #3c6e71;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info {
+  background: #284b63;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.email-display {
+  font-size: 1.8rem;
+  word-break: break-word;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.email-display::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: #d9d9d9;
+  bottom: -5px;
+  left: 25%;
+}
+
+.role-display {
+  font-size: 1.4rem;
+  color: #d9d9d9;
+}
