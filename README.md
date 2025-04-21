@@ -100,3 +100,4 @@ Este proyecto utiliza una estructura simple donde:
 - Visualización de perfil de usuario
 - Protección de rutas mediante tokens JWT
 # desafio_jwt
+# desafio_sj_jwt
