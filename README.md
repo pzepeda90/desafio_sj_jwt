@@ -101,3 +101,4 @@ Este proyecto utiliza una estructura simple donde:
 - Protección de rutas mediante tokens JWT
 # desafio_jwt
 # desafio_sj_jwt
+# desafio_jwt_corregido
