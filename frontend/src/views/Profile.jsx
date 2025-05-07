@@ -33,7 +33,7 @@ const Profile = () => {
             {developer.email}
           </h2>
           <h3 className='text-center role-display'>
-            {developer.rol} en {developer.lenguaje}
+            {developer.rol} en {developer.lenguage}
           </h3>
         </div>
       </div>

@@ -1,10 +1,10 @@
 const bcrypt = require('bcrypt')
 const pool = require('../../config/db')
 
-const registerUser = async (email, password, rol, lenguaje) => {
+const registerUser = async (email, password, rol, lenguage) => {
   try {
     // Validar que todos los campos estén presentes
-    if (!email || !password || !rol || !lenguaje) {
+    if (!email || !password || !rol || !lenguage) {
       throw new Error('Todos los campos son obligatorios')
     }
 
@@ -15,8 +15,8 @@ const registerUser = async (email, password, rol, lenguaje) => {
     }
 
     const hashedPassword = await bcrypt.hash(password, 10)
-    const query = 'INSERT INTO usuarios (email, password, rol, lenguaje) VALUES ($1, $2, $3, $4) RETURNING *'
-    const values = [email, hashedPassword, rol, lenguaje]
+    const query = 'INSERT INTO usuarios (email, password, rol, lenguage) VALUES ($1, $2, $3, $4) RETURNING *'
+    const values = [email, hashedPassword, rol, lenguage]
     const { rows } = await pool.query(query, values)
     return rows[0]
   } catch (error) {

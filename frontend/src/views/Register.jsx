@@ -9,7 +9,7 @@ const initialForm = {
   email: 'docente@desafiolatam.com',
   password: '123456',
   rol: 'Seleccione un rol',
-  lenguaje: 'Seleccione un lenguaje'
+  lenguage: 'Seleccione un lenguage'
 }
 
 // Lista de campos requeridos
@@ -30,8 +30,8 @@ const Register = () => {
     }
 
     // Validar campos de selección
-    if (user.rol === 'Seleccione un rol' || user.lenguaje === 'Seleccione un lenguaje') {
-      return showWarningAlert('Campos incompletos', 'Debes seleccionar un rol y un lenguaje.')
+    if (user.rol === 'Seleccione un rol' || user.lenguage === 'Seleccione un lenguage') {
+      return showWarningAlert('Campos incompletos', 'Debes seleccionar un rol y un lenguage.')
     }
 
     if (!isValidEmail(user.email)) {
@@ -95,14 +95,14 @@ const Register = () => {
         </select>
       </div>
       <div className='form-group mt-1'>
-        <label>Lenguaje</label>
+        <label>Lenguage</label>
         <select
-          defaultValue={user.lenguaje}
+          defaultValue={user.lenguage}
           onChange={handleUser}
-          name='lenguaje'
+          name='lenguage'
           className='form-select'
         >
-          <option disabled>Seleccione un lenguaje</option>
+          <option disabled>Seleccione un lenguage</option>
           <option value='JavaScript'>JavaScript</option>
           <option value='Python'>Python</option>
           <option value='Ruby'>Ruby</option>

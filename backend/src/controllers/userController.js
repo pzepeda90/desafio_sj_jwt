@@ -3,8 +3,8 @@ const userModel = require('../models/userModel')
 
 const register = async (req, res) => {
   try {
-    const { email, password, rol, lenguaje } = req.body
-    const newUser = await userModel.registerUser(email, password, rol, lenguaje)
+    const { email, password, rol, lenguage } = req.body
+    const newUser = await userModel.registerUser(email, password, rol, lenguage)
 
     // Eliminamos la contraseña del objeto respuesta por seguridad
     delete newUser.password

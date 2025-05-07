@@ -18,9 +18,9 @@ const checkCredentials = (req, res, next) => {
   
   // Si es una solicitud de registro, verificar que todos los campos estén presentes
   if (req.path === '/usuarios') {
-    const { rol, lenguaje } = req.body
-    if (!rol || !lenguaje) {
-      return res.status(400).json({ error: 'Todos los campos son requeridos (email, password, rol, lenguaje)' })
+    const { rol, lenguage } = req.body
+    if (!rol || !lenguage) {
+      return res.status(400).json({ error: 'Todos los campos son requeridos (email, password, rol, lenguage)' })
     }
   }
   
